@@ -1,25 +1,30 @@
 {
-  "name": "typescript-project",
+  "name": "express_ts",
   "version": "1.0.0",
-  "description": "Basic Node + TypeScript API for CI/CD learning",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "watch": "tsc -w",
+    "dev": "tsx watch src/index.ts"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "keywords": ["api", "express", "typescript"],
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.21.0"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.9.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
   }
 }
